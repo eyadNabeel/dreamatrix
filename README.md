@@ -19,8 +19,9 @@ Initial Attempts
 ================
 To begin with, we implemented a rough version of the l-system specified in the paper, and we drew the road segments directly on a PyCairo canvas. The results were encouraging but had quite a few issues. 
 
-| :------- | :-------: |
+
 | <img align="center" src="img/init_attempt_000.png" width=50% height=50%> | <img align="center" src="img/init_attempt_001.png" width=50% height=50%> |
+| :------- | :-------: |
 
 As you can see, the roads seemed to lack any structure, just randomly growing in all directions, but beyond that, the roads were intersecting themselves and each other which isn't feasible. To fix the former issue, we added a delay; the roads we start with had the smallest delay which means they expand every iteration whereas the branches had increasing delay in order to avoid interference between the main road and the branches.
 
@@ -54,7 +55,7 @@ Finally, to add some functionality to our maps, we encoded the road structure in
 We've also shown that it's possible to have entities navigate from one point to the next through those paths:
 
 | <img align="center" src="img/path003.png" width=50% height=50%> | <img align="center" src="img/path003.gif" width=50% height=50%> |
-| :------- | :-------: | :-------: |
+| :------- | :-------: |
 
 Future Directions
 ================
