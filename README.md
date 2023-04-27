@@ -19,7 +19,9 @@ Initial Attempts
 ================
 To begin with, we implemented a rough version of the l-system specified in the paper, and we drew the road segments directly on a PyCairo canvas. The results were encouraging but had quite a few issues. 
 
+
 | <img align="center" src="img/init_attempt_000.png" width=50% height=50%> | <img align="center" src="img/init_attempt_001.png" width=50% height=50%> |
+| :------- | :-------: |
 
 As you can see, the roads seemed to lack any structure, just randomly growing in all directions, but beyond that, the roads were intersecting themselves and each other which isn't feasible. To fix the former issue, we added a delay; the roads we start with had the smallest delay which means they expand every iteration whereas the branches had increasing delay in order to avoid interference between the main road and the branches.
 
@@ -28,6 +30,7 @@ R-Trees
 We wanted to jump straight to collisions and resolve the issue, however, it would've been very inefficient to iterate through a list of road segments checking for collisions, so we had to implement the R-Tree structure which is a spatial data structure with the primary objective of making access to spatial data efficient; by reducing the number of entities I have to make comparisons with and sparing me the trouble of comparing my road segments with every other road segment.
 
 | Road Structure | Node Structure |
+| :------- | :-------: |
 | <img src="img/road_rtree.png"> | <img src="img/node_rtree.png"> |
 
 Here we have an image of the road structure and the (bounding boxes of the) R-Tree that contains it. The darker bounding boxes signify nodes higher up in the tree structure while the brightest ones would represent leaf nodes.
@@ -37,6 +40,7 @@ Collision Detection
 After implementing R-Trees, we implemented two forms of collision detection; the first form of collision detection checks for intersections between two road segments. The second checks if the endpoint of the new road segment is within a radius of another road segment. Once we were able to implement those forms of collision detection, the difference in results was massive:
 
 | | Before Collision Detection | After Collision Detection |
+| :------- | :-------: | :------- |
 | 1000 Iterations | <img src="img/iter_1000_before.png"> | <img src="img/iter_1000_after.png"> |
 | 2000 Iterations | <img src="img/iter_2000_before.png"> | <img src="img/iter_2000_after.png"> |
 | 10000 Iterations | <img src="img/iter_10000_before.png"> | <img src="img/iter_10000_after.png"> |
@@ -46,10 +50,12 @@ Path Finding
 Finally, to add some functionality to our maps, we encoded the road structure into a graph structure with vertices and edges, and we implemented BFS to find the shortest path between any two points (or at least the closest road segments from those two points):
 
 | <img align="center" src="img/path000.png" width=50% height=50%> | <img align="center" src="img/path001.png" width=50% height=50%> | <img align="center" src="img/path002.png" width=50% height=50%> |
+| :------- | :-------: | :-------: |
 
 We've also shown that it's possible to have entities navigate from one point to the next through those paths:
 
 | <img align="center" src="img/path003.png" width=50% height=50%> | <img align="center" src="img/path003.gif" width=50% height=50%> |
+| :------- | :-------: |
 
 Future Directions
 ================
