@@ -40,7 +40,7 @@ R-Trees
 We wanted to jump straight to collisions and resolve the issue, however, it would've been very inefficient to iterate through a list of road segments checking for collisions, so we had to implement the R-Tree structure which is a spatial data structure with the primary objective of making access to spatial data efficient; by reducing the number of entities I have to make comparisons with and sparing me the trouble of comparing my road segments with every other road segment.
 
 | Road Structure | Node Structure |
-| :------- | :-------: |
+| :-------: | :-------: |
 | <img src="https://raw.githubusercontent.com/eyadNabeel/dreamatrix/main/img/road_rtree.png" width="400"> | <img src="img/node_rtree.png" width="400"> |
 
 Here we have an image of the road structure and the (bounding boxes of the) R-Tree that contains it. The darker bounding boxes signify nodes higher up in the tree structure while the brightest ones would represent leaf nodes.
