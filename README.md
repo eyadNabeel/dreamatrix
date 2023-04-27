@@ -24,10 +24,10 @@ To begin with, we implemented a rough version of the l-system specified in the p
     <table>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="img/init_attempt_000.png" width="300"/>
+        	    <img src="img/init_attempt_000.png" width="400"/>
       	    </td>
             <td style="padding:10px">
-            	<img src="img/init_attempt_001.png" width="300"/>
+            	<img src="img/init_attempt_001.png" width="400"/>
             </td>
         </tr>
     </table>
@@ -41,7 +41,7 @@ We wanted to jump straight to collisions and resolve the issue, however, it woul
 
 | Road Structure | Node Structure |
 | :------- | :-------: |
-| <img src="https://raw.githubusercontent.com/eyadNabeel/dreamatrix/main/img/road_rtree.png" width=50% height=50%> | <img src="img/node_rtree.png" width=50% height=50%> |
+| <img src="https://raw.githubusercontent.com/eyadNabeel/dreamatrix/main/img/road_rtree.png" width="400"> | <img src="img/node_rtree.png" width="400"> |
 
 Here we have an image of the road structure and the (bounding boxes of the) R-Tree that contains it. The darker bounding boxes signify nodes higher up in the tree structure while the brightest ones would represent leaf nodes.
 
