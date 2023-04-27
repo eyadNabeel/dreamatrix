@@ -13,7 +13,7 @@ A more functional (albeit messier and more raw) version of the code could also b
 Pipeline Overview
 ================
 
-<img align="center" src="img/init_attempt_000.png" width="600">
+<img align="center" src="img/pipeline.png" width="600">
 
 As illustrated in the image above, the pipeline for this map generator goes through multiple steps. It starts with a road module which expands via the [l-system](https://en.wikipedia.org/wiki/L-system#:~:text=An%20L%2Dsystem%20consists%20of,generated%20strings%20into%20geometric%20structures.) we have in place. After generating the road segments and culling the roads that end up intersecting with others or are within a small radius of others, the road segments are stored in an [R-Tree data structure](https://en.wikipedia.org/wiki/R-tree#:~:text=The%20R%2Dtrees%20are%20tree,both%20theoretical%20and%20applied%20contexts.) designed for efficient retrieval so that if we wanted to check for intersections with other road segments, we could easily do that. After the map is generated, we encode it into a graph structure for functional use; for example, if we wanted to find a path between two points in the map.
 
