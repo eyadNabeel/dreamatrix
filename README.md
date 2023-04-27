@@ -50,22 +50,22 @@ Collision Detection
 After implementing R-Trees, we implemented two forms of collision detection; the first form of collision detection checks for intersections between two road segments. The second checks if the endpoint of the new road segment is within a radius of another road segment. Once we were able to implement those forms of collision detection, the difference in results was massive:
 
 | | Before Collision Detection | After Collision Detection |
-| :------- | :-------: | :------- |
-| 1000 Iterations | <img src="img/iter_1000_before.png"> | <img src="img/iter_1000_after.png"> |
-| 2000 Iterations | <img src="img/iter_2000_before.png"> | <img src="img/iter_2000_after.png"> |
-| 10000 Iterations | <img src="img/iter_10000_before.png"> | <img src="img/iter_10000_after.png"> |
+| :-------: | :-------: | :------- |
+| 1000 Iterations | <img src="img/iter_1000_before.png" width="400"> | <img src="img/iter_1000_after.png" width="400"> |
+| 2000 Iterations | <img src="img/iter_2000_before.png" width="400"> | <img src="img/iter_2000_after.png" width="400"> |
+| 10000 Iterations | <img src="img/iter_10000_before.png" width="400"> | <img src="img/iter_10000_after.png" width="400"> |
 
 Path Finding
 ================
 Finally, to add some functionality to our maps, we encoded the road structure into a graph structure with vertices and edges, and we implemented BFS to find the shortest path between any two points (or at least the closest road segments from those two points):
 
-| <img align="center" src="img/path000.png" width=50% height=50%> | <img align="center" src="img/path001.png" width=50% height=50%> | <img align="center" src="img/path002.png" width=50% height=50%> |
-| :------- | :-------: | :-------: |
+| <img align="center" src="img/path000.png" width="400"> | <img align="center" src="img/path001.png" width="400"> | <img align="center" src="img/path002.png" width="400"> |
+| :-------: | :-------: | :-------: |
 
 We've also shown that it's possible to have entities navigate from one point to the next through those paths:
 
-| <img align="center" src="img/path003.png" width=50% height=50%> | <img align="center" src="img/path003.gif" width=50% height=50%> |
-| :------- | :-------: |
+| <img align="center" src="img/path003.png" width="400"> | <img align="center" src="img/path003.gif" width="400"> |
+| :-------: | :-------: |
 
 Future Directions
 ================
