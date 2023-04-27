@@ -8,7 +8,7 @@ A tool made to procedurally generate cities and urban landscapes. In this projec
 * [Pillow](https://pillow.readthedocs.io/en/stable/)
 * [Numpy](https://numpy.org/)
 
-A more functional version of the code could also be found in this [Google Colab Notebook](https://colab.research.google.com/drive/1djd7y_JbFkAIBUAtTcX6_inBNpFQvDu-#scrollTo=vG78W_zIvLG5&uniqifier=1)
+A more functional (albeit messier and more raw) version of the code could also be found in this [Google Colab Notebook](https://colab.research.google.com/drive/1djd7y_JbFkAIBUAtTcX6_inBNpFQvDu-#scrollTo=vG78W_zIvLG5&uniqifier=1).
 
 Pipeline Overview
 ================
