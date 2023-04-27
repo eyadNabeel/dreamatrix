@@ -31,7 +31,7 @@ We wanted to jump straight to collisions and resolve the issue, however, it woul
 
 | Road Structure | Node Structure |
 | :------- | :-------: |
-| <img src="[img/road_rtree.png](https://github.com/eyadNabeel/dreamatrix/blob/main/img/road_rtree.png)" width=50% height=50%> | <img src="img/node_rtree.png" width=50% height=50%> |
+| <img src="https://github.com/eyadNabeel/dreamatrix/blob/main/img/road_rtree.png" width=50% height=50%> | <img src="img/node_rtree.png" width=50% height=50%> |
 
 Here we have an image of the road structure and the (bounding boxes of the) R-Tree that contains it. The darker bounding boxes signify nodes higher up in the tree structure while the brightest ones would represent leaf nodes.
 
